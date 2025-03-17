@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp</title>
+    <link href="/style.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+
+    <div class="w-full h-1/2 flex flex-col justify-center items-center gap-2">
+
+        <form class="flex flex-col justify-center items-center gap-2" action="/user/signUp" method="POST">
+            <h1 class="font-bold text-xl">Exam Preparatory</h1>
+            <h3 class="font-bold">Sign Up</h3>
+            <input class="py-1 px-1" type="text" name="firstName" placeholder="first name..."/>
+            <input class="py-1 px-1" type="text" name="lastName" placeholder="last name..."/>
+            <input class="py-1 px-1" type="text" name="userName" placeholder="user name..."/>
+            <input class="py-1 px-1" type="text" name="email" placeholder="email..."/>
+            <input class="py-1 px-1" type="password" name="password" placeholder="password..."/>
+            <button class="bg-blue-500 text-white font-bold px-4 rounded-lg text-sm" type="submit">Sign Up</button>
+            <% if (locals.result) { %>
+                <p><%= result.message %></p>
+            <% } %>
+        </form>
+        <p>or</p>
+        <form class="" action="/page/signin" method="GET">
+            <button class="bg-blue-500 text-white font-bold px-4 rounded-lg text-sm" type="submit">Sign In</button>
+        </form>
+
+    </div>
+    
+</body>
+</html>
