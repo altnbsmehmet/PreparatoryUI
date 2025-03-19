@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "main": "UI.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon UI.js"
   },
   "author": "Mehmet Altınbaş",
   "license": "ISC",
@@ -12,11 +13,13 @@
     "axios": "^1.7.9",
     "bcrypt": "^5.1.1",
     "body-parser": "^1.20.3",
+    "connect-livereload": "^0.6.1",
     "cookie-parser": "^1.4.7",
     "cors": "^2.8.5",
     "dotenv": "^16.4.7",
     "ejs": "^3.1.10",
     "express": "^4.21.2",
+    "livereload": "^0.9.3",
     "multer": "^1.4.5-lts.1",
     "nodemon": "^3.1.9"
   },
